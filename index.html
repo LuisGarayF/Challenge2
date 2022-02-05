@@ -5,6 +5,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     </head>
     <body>
         <header>
@@ -13,24 +16,50 @@
         <div class="container">
             <div class="izquierda" id="izquierda">
                 <div id="izquierdo" class="izquierdo">
-                    <canvas id="canvas_izquierda" class="canvas_izquierda"> 
+                    <canvas id="canvas_izquierda" class="canvas_izquierda" width="650" height="850"> 
     
                     </canvas> 
                     <button id="btn_iniciar" class="btn_iniciar">Iniciar Juego</button>    
                 </div>    
             </div>
             <div id="derecha" class="derecha">
-                <div id="derecha_sup" class="derecha_sup">
+                <div class="derecha_sup">
                     <h2>Errores:</h2>
+                    <canvas id="canvas_derecha" class="canvas_derecha" width="850" height="250">
+                    </canvas>
                 </div>
                 <div id="derecha_inf" class="derecha_inf">
                     <h2>Aciertos:</h2>
                 </div>    
             </div>
         </div>
-        <footer>
-            <div id="footer-sup" class="footer-sup"></div>
-            <div id="footer-inf" class="footer-inf"></div>
+        <footer id="footer" class="footer">
+            <div id="footer-sup" class="footer-sup">
+                <p><h3>Challenge 2 </h3></p><br>
+                  <p class="text-justify">Se trata del juego del ahorcado.</p>
+                  <p>Instrucciones:</p>
+                  <p>- Funciona solo con letras minúsculas</p>
+                  <p>- No deben ser utilizados letras con acentos ni caracteres especiales</p>
+                  <p>- Presione el botón iniciar para comenzar a jugar.</p>
+                  <p>- Utilice el teclado para elegir la letra que quiera jugar.</p>
+                  <br> 
+                  <p></p>
+            </div>
+            <hr>    
+            <div id="footer-inf" class="footer-inf">
+                <span> <br>
+                    <p class="copyright">Copyright &copy; 2022 Realizado por Luis Garay F. para  
+                       <a href="https://www.aluracursos.com/challenges/oracle-one" target="_blank">Alura Latam - Oracle</a>.
+                    </p>
+                </span>
+                <span>
+                    <ul class="social-icons">
+                        <li><a class="twitter" href="https://twitter.com/ryukansen" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="github" href="https://github.com/LuisGarayF" target="_blank"><i class="fab fa-github"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/in/luisgarayfuentes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>   
+                      </ul>
+                </span>    
+            </div>
         </footer>
         <script src="js/main.js" defer></script>
     </body>
