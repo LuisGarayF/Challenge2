@@ -1,0 +1,89 @@
+body{
+    background-color: #f5f5f5;
+    font-family: Roboto;
+}
+
+
+header{
+    background-color: #cccccc;
+    height: 100px;
+}
+.menu-lista{
+    display: flex;
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+.menu-item{
+    padding: 20px 5px;
+    margin-right: 10px;
+}
+.menu-item-link{
+    text-decoration: none;
+    color: black;
+}
+.menu-item-link:hover{
+    font-weight: 800;
+}
+
+.slider-menu{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.slider-menu li{
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    background-color:white;
+    transition: opacity .5s;
+}
+
+.slider-menu li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slider-menu li:first-child{
+    opacity: 1;
+}
+
+.slider-menu li:target{
+    opacity: 1;
+}
+.slider-control{
+    text-align: center;
+    margin: 20px;
+}
+
+.slider-control li{
+    display: inline-block;
+    text-align:center;
+}
+
+.slider-control li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.slider-control li a:hover{
+    background-color: rgb(80, 79, 79);
+    font-size: 25px;
+}
+
+footer{
+    background-color:red;
+
+}
